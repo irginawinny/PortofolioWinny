@@ -1,0 +1,274 @@
+/* ========================================
+   MATH WITH WINNY — Portfolio Stylesheet
+   Professional + Colorful Refinement
+   ======================================== */
+
+/* ---- Reset & Base ---- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Inter', sans-serif;
+    background: #FAFBFE;
+    overflow-x: hidden;
+    color: #374151;
+}
+
+/* ---- Custom Scrollbar ---- */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #FAFBFE; }
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #c4a1e0, #8bb8d6);
+    border-radius: 99px;
+}
+
+/* ---- Bento Card Base ---- */
+.bento-card {
+    border-radius: 1.5rem;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.04);
+}
+.bento-card:hover {
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 16px 40px -12px rgba(0,0,0,0.08),
+                0 4px 16px -4px rgba(0,0,0,0.04);
+}
+
+/* ---- Math Floating Decorations ---- */
+.math-symbol {
+    position: absolute;
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    opacity: 0.07;
+    pointer-events: none;
+    user-select: none;
+    z-index: 0;
+    color: #94a3b8;
+}
+
+/* ---- Subtle Background Pattern ---- */
+.geo-pattern {
+    background-image:
+        radial-gradient(circle at 20% 50%, rgba(196,161,224,0.04) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(139,184,214,0.04) 0%, transparent 50%),
+        radial-gradient(circle at 50% 80%, rgba(167,196,139,0.03) 0%, transparent 50%);
+}
+
+/* ---- 3D Floating Shapes ---- */
+.shape-3d {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* ---- Section Reveal Animation ---- */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ---- Gradient Text — refined, less flashy ---- */
+.gradient-text {
+    background: linear-gradient(135deg, #c084cf 0%, #7c9fd6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ---- Stat Counter Glow ---- */
+.stat-glow {
+    text-shadow: 0 0 20px rgba(0,0,0,0.06);
+}
+
+/* ---- Nav Glassmorphism ---- */
+.nav-glass {
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+
+/* ========================================
+   HERO PORTRAIT — proper sizing, no clip
+   ======================================== */
+.portrait-wrapper {
+    width: 100%;
+    max-width: 280px;
+    aspect-ratio: 3 / 4;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0 20px 50px -15px rgba(0,0,0,0.12);
+    position: relative;
+    background: #f1f5f9;
+}
+.portrait-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    display: block;
+}
+
+/* ---- Colored accent strip on cards ---- */
+.accent-top {
+    position: relative;
+}
+.accent-top::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 1.5rem; right: 1.5rem;
+    height: 3px;
+    border-radius: 0 0 99px 99px;
+}
+.accent-pink::before { background: #c084cf; }
+.accent-blue::before { background: #7c9fd6; }
+.accent-green::before { background: #6dba8a; }
+.accent-yellow::before { background: #d4a843; }
+.accent-purple::before { background: #9f7aca; }
+.accent-coral::before { background: #d48a6d; }
+
+/* ---- Expertise Icon Background ---- */
+.expertise-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+.bento-card:hover .expertise-icon {
+    transform: rotate(6deg) scale(1.08);
+}
+
+/* ---- Project Card Image Overlay ---- */
+.project-img-wrap {
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+.project-img-wrap img {
+    transition: transform 0.5s ease;
+}
+.bento-card:hover .project-img-wrap img {
+    transform: scale(1.05);
+}
+
+/* ---- Contact Form Input ---- */
+.form-input {
+    border: 1.5px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 12px 16px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background: #fafbfe;
+    width: 100%;
+    color: #374151;
+}
+.form-input:focus {
+    outline: none;
+    border-color: #9f7aca;
+    box-shadow: 0 0 0 3px rgba(159,122,202,0.1);
+    background: #fff;
+}
+.form-input::placeholder {
+    color: #9ca3af;
+}
+
+/* ---- Mobile Nav ---- */
+.mobile-menu {
+    transform: translateX(100%);
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.mobile-menu.open {
+    transform: translateX(0);
+}
+
+/* ---- Dot Grid Pattern ---- */
+.dot-grid {
+    background-image: radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px);
+    background-size: 24px 24px;
+}
+
+/* ---- Stat Number ---- */
+.stat-number {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    line-height: 1;
+}
+
+/* ---- Social Icon ---- */
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: #6b7280;
+    background: #f3f4f6;
+}
+.social-icon:hover {
+    transform: translateY(-2px);
+}
+
+/* ---- Bento Grid ---- */
+.bento-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+/* ---- Muted Pastel Backgrounds (toned down) ---- */
+.bg-soft-pink    { background: #fdf2f5; }
+.bg-soft-blue    { background: #f0f6fb; }
+.bg-soft-green   { background: #f0f7f2; }
+.bg-soft-yellow  { background: #fdf8ee; }
+.bg-soft-purple  { background: #f5f0fa; }
+.bg-soft-coral   { background: #fdf4f0; }
+.bg-soft-mint    { background: #eef8f4; }
+
+/* ---- Muted brand colors for text ---- */
+.text-muted-pink   { color: #b05a7a; }
+.text-muted-blue   { color: #5a8ab0; }
+.text-muted-green  { color: #4a8a60; }
+.text-muted-yellow { color: #a08030; }
+.text-muted-purple { color: #7a5aaa; }
+.text-muted-coral  { color: #b07050; }
+
+/* ---- Tag Pill ---- */
+.tag-pill {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    padding: 4px 12px;
+    border-radius: 99px;
+    white-space: nowrap;
+}
+
+/* ========================================
+   KEYFRAME ANIMATIONS
+   ======================================== */
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50%      { transform: translateY(-12px) rotate(2deg); }
+}
+@keyframes bounceSoft {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-6px); }
+}
+@keyframes wiggle {
+    0%, 100% { transform: rotate(-2deg); }
+    50%      { transform: rotate(2deg); }
+}
+@keyframes fadeInUp {
+    0%   { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
