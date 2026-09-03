@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Certificates — Math with Winny</title>
+    <meta name="description" content="Browse all certifications and recognitions by Winny — Mathematics Educator.">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            pink: '#b05a7a',
+                            blue: '#5a8ab0',
+                            green: '#4a8a60',
+                            purple: '#7a5aaa',
+                            yellow: '#a08030',
+                            coral: '#b07050',
+                        },
+                        soft: {
+                            pink: '#fdf2f5',
+                            blue: '#f0f6fb',
+                            green: '#f0f7f2',
+                            yellow: '#fdf8ee',
+                            purple: '#f5f0fa',
+                            coral: '#fdf4f0',
+                            mint: '#eef8f4',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                        math: ['Caveat', 'cursive'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="geo-pattern min-h-screen">
+
+    <!-- =============== NAV (sticky) =============== -->
+    <nav class="nav-glass fixed top-0 left-0 right-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 md:h-[72px]">
+                <a href="index.html" class="flex items-center gap-2">
+                    <span class="text-xl md:text-2xl font-display font-[800] tracking-tight">
+                        <span class="text-[#C1E8FF]">MATH</span><span class="text-[#7DA0CA]">/</span><span class="text-[#C1E8FF]">∑</span>
+                    </span>
+                    <span class="text-[11px] md:text-xs font-body text-[#7DA0CA] leading-tight">
+                        with<br><span class="font-semibold text-[#7DA0CA]">WINNY</span>
+                    </span>
+                </a>
+                <a href="index.html" class="px-4 py-2 rounded-lg text-[13px] font-medium text-[#7DA0CA] hover:text-[#C1E8FF] hover:bg-[#052659] transition-all duration-300 flex items-center gap-1">
+                    <i data-lucide="home" class="w-4 h-4"></i> Home
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =============== HEADER =============== -->
+    <header class="relative pt-24 md:pt-28 pb-4 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <a href="index.html" class="inline-flex items-center gap-2 text-[#7DA0CA] hover:text-[#C1E8FF] transition-colors text-sm font-medium mb-6 group">
+            <i data-lucide="arrow-left" class="w-4 h-4 group-hover:-translate-x-1 transition-transform"></i>
+            Back to Home
+        </a>
+        <div class="text-center mb-10">
+            <h1 class="font-display text-3xl sm:text-4xl font-[900] text-[#C1E8FF]">
+                My <span class="gradient-text">Certificates</span> 🏅
+            </h1>
+            <p class="text-[#7DA0CA] text-sm mt-3 max-w-lg mx-auto">Recognitions, certifications, and achievements throughout my teaching career.</p>
+            <div class="flex justify-center mt-4">
+                <div class="w-12 h-[3px] rounded-full bg-gradient-to-r from-brand-yellow via-brand-coral to-brand-pink opacity-60"></div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- =============== CERTIFICATES GRID =============== -->
+    <section class="relative pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="bento-grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 reveal">
+
+            <!-- Certificate 1 -->
+            <div class="bento-card group cursor-pointer overflow-hidden">
+                <div class="cert-img-wrap h-48 sm:h-52">
+                    <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=600&h=400&fit=crop" alt="Teaching Excellence Certificate" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-[1.5rem]"></div>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-display text-base font-bold text-[#C1E8FF] mb-1">Teaching Excellence Award</h3>
+                    <p class="text-[#7DA0CA] text-sm leading-relaxed">Certified for outstanding achievement in mathematics education methodology and student engagement.</p>
+                    <span class="tag-pill bg-[#052659] text-[#C1E8FF] mt-3 inline-block">2024</span>
+                </div>
+            </div>
+
+            <!-- Certificate 2 -->
+            <div class="bento-card group cursor-pointer overflow-hidden">
+                <div class="cert-img-wrap h-48 sm:h-52">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c476?w=600&h=400&fit=crop" alt="Advanced Pedagogy Certificate" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-[1.5rem]"></div>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-display text-base font-bold text-[#C1E8FF] mb-1">Advanced Pedagogy</h3>
+                    <p class="text-[#7DA0CA] text-sm leading-relaxed">Completed advanced training in modern pedagogical techniques and curriculum innovation.</p>
+                    <span class="tag-pill bg-[#052659] text-[#C1E8FF] mt-3 inline-block">2023</span>
+                </div>
+            </div>
+
+            <!-- Certificate 3 -->
+            <div class="bento-card group cursor-pointer overflow-hidden">
+                <div class="cert-img-wrap h-48 sm:h-52">
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&h=400&fit=crop" alt="Digital Learning Certificate" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-[1.5rem]"></div>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-display text-base font-bold text-[#C1E8FF] mb-1">Digital Learning Specialist</h3>
+                    <p class="text-[#7DA0CA] text-sm leading-relaxed">Specialized certification in digital tools and e-learning platform management.</p>
+                    <span class="tag-pill bg-[#052659] text-[#C1E8FF] mt-3 inline-block">2023</span>
+                </div>
+            </div>
+
+            <!-- Certificate 4 -->
+            <div class="bento-card group cursor-pointer overflow-hidden">
+                <div class="cert-img-wrap h-48 sm:h-52">
+                    <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&h=400&fit=crop" alt="STEM Innovation Certificate" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-[1.5rem]"></div>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-display text-base font-bold text-[#C1E8FF] mb-1">STEM Innovation</h3>
+                    <p class="text-[#7DA0CA] text-sm leading-relaxed">Recognition for innovative STEM teaching methods and cross-disciplinary integration.</p>
+                    <span class="tag-pill bg-[#052659] text-[#C1E8FF] mt-3 inline-block">2022</span>
+                </div>
+            </div>
+
+            <!-- Certificate 5 -->
+            <div class="bento-card group cursor-pointer overflow-hidden">
+                <div class="cert-img-wrap h-48 sm:h-52">
+                    <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&h=400&fit=crop" alt="Classroom Management Certificate" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-[1.5rem]"></div>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-display text-base font-bold text-[#C1E8FF] mb-1">Classroom Management</h3>
+                    <p class="text-[#7DA0CA] text-sm leading-relaxed">Certified in advanced classroom management strategies for effective learning environments.</p>
+                    <span class="tag-pill bg-[#052659] text-[#C1E8FF] mt-3 inline-block">2022</span>
+                </div>
+            </div>
+
+            <!-- Certificate 6 -->
+            <div class="bento-card group cursor-pointer overflow-hidden">
+                <div class="cert-img-wrap h-48 sm:h-52">
+                    <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&h=400&fit=crop" alt="Research Methodology Certificate" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-[1.5rem]"></div>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-display text-base font-bold text-[#C1E8FF] mb-1">Research Methodology</h3>
+                    <p class="text-[#7DA0CA] text-sm leading-relaxed">Completed certification in educational research methodology and data analysis.</p>
+                    <span class="tag-pill bg-[#052659] text-[#C1E8FF] mt-3 inline-block">2021</span>
+                </div>
+            </div>
+
+            <!-- Certificate 7 -->
+            <div class="bento-card group cursor-pointer overflow-hidden">
+                <div class="cert-img-wrap h-48 sm:h-52">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&h=400&fit=crop" alt="Inclusive Education Certificate" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-[1.5rem]"></div>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-display text-base font-bold text-[#C1E8FF] mb-1">Inclusive Education</h3>
+                    <p class="text-[#7DA0CA] text-sm leading-relaxed">Trained in inclusive education practices to support diverse learners in mathematics.</p>
+                    <span class="tag-pill bg-[#052659] text-[#C1E8FF] mt-3 inline-block">2021</span>
+                </div>
+            </div>
+
+            <!-- Certificate 8 -->
+            <div class="bento-card group cursor-pointer overflow-hidden">
+                <div class="cert-img-wrap h-48 sm:h-52">
+                    <img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=600&h=400&fit=crop" alt="Curriculum Development Certificate" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-[1.5rem]"></div>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-display text-base font-bold text-[#C1E8FF] mb-1">Curriculum Development</h3>
+                    <p class="text-[#7DA0CA] text-sm leading-relaxed">Certified in national curriculum development standards and implementation frameworks.</p>
+                    <span class="tag-pill bg-[#052659] text-[#C1E8FF] mt-3 inline-block">2020</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =============== FOOTER =============== -->
+    <footer class="bg-[#021024] border-t border-[#052659] py-6 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
+            <div class="flex items-center gap-2">
+                <span class="font-display font-[800] text-base">
+                    <span class="text-[#C1E8FF]">MATH</span><span class="text-[#7DA0CA]">/</span><span class="text-[#C1E8FF]">∑</span>
+                </span>
+                <span class="text-[#7DA0CA] text-xs">with Winny</span>
+            </div>
+            <p class="text-[#7DA0CA] text-xs text-center">© 2026 Winny. Made with 💖 and a little bit of π.</p>
+            <div class="flex items-center gap-1 text-[#7DA0CA] text-xs">
+                <i data-lucide="heart" class="w-3 h-3 text-[#C1E8FF]"></i>
+                <span>Designed for math lovers</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+
+            // Scroll reveal
+            const revealElements = document.querySelectorAll('.reveal');
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        const cards = entry.target.querySelectorAll('.bento-card');
+                        cards.forEach((card, i) => {
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(30px)';
+                            card.style.transition = `all 0.6s cubic-bezier(0.16, 1, 0.3, 1) ${i * 0.08}s`;
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            }, 50);
+                        });
+                    }
+                });
+            }, { threshold: 0.05, rootMargin: '0px 0px -30px 0px' });
+            revealElements.forEach(el => revealObserver.observe(el));
+        });
+    </script>
+</body>
+</html>

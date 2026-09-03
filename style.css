@@ -1,22 +1,23 @@
 /* ========================================
    MATH WITH WINNY — Portfolio Stylesheet
-   Professional + Colorful Refinement
+   Dark Blue Gradient Theme
+   Palette: #C1E8FF / #7DA0CA / #5483B3 / #052659 / #021024
    ======================================== */
 
 /* ---- Reset & Base ---- */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
     font-family: 'Inter', sans-serif;
-    background: #FAFBFE;
+    background: #7DA0CA;
     overflow-x: hidden;
-    color: #374151;
+    color: #C1E8FF;
 }
 
 /* ---- Custom Scrollbar ---- */
 ::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #FAFBFE; }
+::-webkit-scrollbar-track { background: #052659; }
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #c4a1e0, #8bb8d6);
+    background: linear-gradient(180deg, #7DA0CA, #5483B3);
     border-radius: 99px;
 }
 
@@ -26,13 +27,16 @@ body {
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
     overflow: hidden;
-    background: #ffffff;
-    border: 1px solid rgba(0,0,0,0.04);
+    background: rgba(5, 38, 89, 0.45);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(193, 232, 255, 0.08);
 }
 .bento-card:hover {
     transform: translateY(-4px) scale(1.01);
-    box-shadow: 0 16px 40px -12px rgba(0,0,0,0.08),
-                0 4px 16px -4px rgba(0,0,0,0.04);
+    box-shadow: 0 16px 40px -12px rgba(2, 16, 36, 0.4),
+                0 4px 16px -4px rgba(2, 16, 36, 0.3);
+    border-color: rgba(193, 232, 255, 0.15);
 }
 
 /* ---- Math Floating Decorations ---- */
@@ -40,19 +44,23 @@ body {
     position: absolute;
     font-family: 'Caveat', cursive;
     font-weight: 700;
-    opacity: 0.07;
+    opacity: 0.08;
     pointer-events: none;
     user-select: none;
     z-index: 0;
-    color: #94a3b8;
+    color: #C1E8FF;
 }
 
-/* ---- Subtle Background Pattern ---- */
+/* ---- Gradient Background (top to bottom) ---- */
 .geo-pattern {
-    background-image:
-        radial-gradient(circle at 20% 50%, rgba(196,161,224,0.04) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(139,184,214,0.04) 0%, transparent 50%),
-        radial-gradient(circle at 50% 80%, rgba(167,196,139,0.03) 0%, transparent 50%);
+    background: linear-gradient(180deg,
+        #7DA0CA 0%,
+        #5483B3 25%,
+        #1a4a7a 50%,
+        #052659 75%,
+        #031b42 100%
+    );
+    background-attachment: fixed;
 }
 
 /* ---- 3D Floating Shapes ---- */
@@ -73,9 +81,9 @@ body {
     transform: translateY(0);
 }
 
-/* ---- Gradient Text — refined, less flashy ---- */
+/* ---- Gradient Text — blue palette ---- */
 .gradient-text {
-    background: linear-gradient(135deg, #c084cf 0%, #7c9fd6 100%);
+    background: linear-gradient(135deg, #C1E8FF 0%, #7DA0CA 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -83,15 +91,15 @@ body {
 
 /* ---- Stat Counter Glow ---- */
 .stat-glow {
-    text-shadow: 0 0 20px rgba(0,0,0,0.06);
+    text-shadow: 0 0 20px rgba(193,232,255,0.15);
 }
 
 /* ---- Nav Glassmorphism ---- */
 .nav-glass {
-    background: rgba(255,255,255,0.85);
+    background: rgba(5, 38, 89, 0.75);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(0,0,0,0.04);
+    border-bottom: 1px solid rgba(193, 232, 255, 0.08);
 }
 
 /* ========================================
@@ -103,9 +111,9 @@ body {
     aspect-ratio: 3 / 4;
     border-radius: 2rem;
     overflow: hidden;
-    box-shadow: 0 20px 50px -15px rgba(0,0,0,0.12);
+    box-shadow: 0 20px 50px -15px rgba(2,16,36,0.5);
     position: relative;
-    background: #f1f5f9;
+    background: #0a3060;
 }
 .portrait-wrapper img {
     width: 100%;
@@ -126,25 +134,82 @@ body {
     height: 3px;
     border-radius: 0 0 99px 99px;
 }
-.accent-pink::before { background: #c084cf; }
-.accent-blue::before { background: #7c9fd6; }
-.accent-green::before { background: #6dba8a; }
-.accent-yellow::before { background: #d4a843; }
-.accent-purple::before { background: #9f7aca; }
-.accent-coral::before { background: #d48a6d; }
+.accent-pink::before { background: #C1E8FF; }
+.accent-blue::before { background: #7DA0CA; }
+.accent-green::before { background: #5483B3; }
+.accent-yellow::before { background: #C1E8FF; }
+.accent-purple::before { background: #7DA0CA; }
+.accent-coral::before { background: #5483B3; }
 
-/* ---- Expertise Icon Background ---- */
-.expertise-icon {
-    width: 56px;
-    height: 56px;
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* ---- Expertise Photo (project-sized) ---- */
+.expertise-photo {
+    width: 100%;
+    height: 0;
+    padding-bottom: 60%;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
     transition: transform 0.3s ease;
+    box-shadow: 0 4px 16px rgba(2,16,36,0.3);
 }
-.bento-card:hover .expertise-icon {
-    transform: rotate(6deg) scale(1.08);
+.expertise-photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+.bento-card:hover .expertise-photo img {
+    transform: scale(1.05);
+}
+
+/* ---- About Portrait ---- */
+.about-portrait-wrapper {
+    width: 100%;
+    max-width: 240px;
+    aspect-ratio: 3 / 4;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 16px 40px -12px rgba(2,16,36,0.5);
+    position: relative;
+    background: #0a3060;
+}
+.about-portrait-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    display: block;
+}
+
+/* ---- Certificate Card Image ---- */
+.cert-img-wrap {
+    overflow: hidden;
+    position: relative;
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+.cert-img-wrap img {
+    transition: transform 0.5s ease;
+}
+.bento-card:hover .cert-img-wrap img {
+    transform: scale(1.05);
+}
+
+/* ---- View All Button ---- */
+.view-all-btn {
+    position: relative;
+    overflow: hidden;
+    background: rgba(193, 232, 255, 0.12) !important;
+    border: 1px solid rgba(193, 232, 255, 0.2);
+    color: #C1E8FF !important;
+}
+.view-all-btn:hover {
+    background: rgba(193, 232, 255, 0.2) !important;
+    border-color: rgba(193, 232, 255, 0.35);
+    box-shadow: 0 8px 24px rgba(2,16,36,0.4) !important;
 }
 
 /* ---- Project Card Image Overlay ---- */
@@ -162,30 +227,32 @@ body {
 
 /* ---- Contact Form Input ---- */
 .form-input {
-    border: 1.5px solid #e5e7eb;
+    border: 1.5px solid rgba(193, 232, 255, 0.15);
     border-radius: 12px;
     padding: 12px 16px;
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     transition: all 0.3s ease;
-    background: #fafbfe;
+    background: rgba(5, 38, 89, 0.4);
     width: 100%;
-    color: #374151;
+    color: #C1E8FF;
 }
 .form-input:focus {
     outline: none;
-    border-color: #9f7aca;
-    box-shadow: 0 0 0 3px rgba(159,122,202,0.1);
-    background: #fff;
+    border-color: #7DA0CA;
+    box-shadow: 0 0 0 3px rgba(125, 160, 202, 0.2);
+    background: rgba(5, 38, 89, 0.6);
 }
 .form-input::placeholder {
-    color: #9ca3af;
+    color: rgba(193, 232, 255, 0.4);
 }
 
 /* ---- Mobile Nav ---- */
 .mobile-menu {
     transform: translateX(100%);
     transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    background: rgba(5, 38, 89, 0.97) !important;
+    backdrop-filter: blur(20px);
 }
 .mobile-menu.open {
     transform: translateX(0);
@@ -193,7 +260,7 @@ body {
 
 /* ---- Dot Grid Pattern ---- */
 .dot-grid {
-    background-image: radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px);
+    background-image: radial-gradient(circle, rgba(193,232,255,0.06) 1px, transparent 1px);
     background-size: 24px 24px;
 }
 
@@ -213,11 +280,12 @@ body {
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    color: #6b7280;
-    background: #f3f4f6;
+    color: #C1E8FF;
+    background: rgba(193, 232, 255, 0.1);
 }
 .social-icon:hover {
     transform: translateY(-2px);
+    background: rgba(193, 232, 255, 0.2);
 }
 
 /* ---- Bento Grid ---- */
@@ -226,22 +294,22 @@ body {
     gap: 1rem;
 }
 
-/* ---- Muted Pastel Backgrounds (toned down) ---- */
-.bg-soft-pink    { background: #fdf2f5; }
-.bg-soft-blue    { background: #f0f6fb; }
-.bg-soft-green   { background: #f0f7f2; }
-.bg-soft-yellow  { background: #fdf8ee; }
-.bg-soft-purple  { background: #f5f0fa; }
-.bg-soft-coral   { background: #fdf4f0; }
-.bg-soft-mint    { background: #eef8f4; }
+/* ---- Soft Backgrounds (dark blue translucent) ---- */
+.bg-soft-pink    { background: rgba(193, 232, 255, 0.06); }
+.bg-soft-blue    { background: rgba(125, 160, 202, 0.1); }
+.bg-soft-green   { background: rgba(84, 131, 179, 0.1); }
+.bg-soft-yellow  { background: rgba(193, 232, 255, 0.08); }
+.bg-soft-purple  { background: rgba(125, 160, 202, 0.08); }
+.bg-soft-coral   { background: rgba(84, 131, 179, 0.08); }
+.bg-soft-mint    { background: rgba(193, 232, 255, 0.05); }
 
-/* ---- Muted brand colors for text ---- */
-.text-muted-pink   { color: #b05a7a; }
-.text-muted-blue   { color: #5a8ab0; }
-.text-muted-green  { color: #4a8a60; }
-.text-muted-yellow { color: #a08030; }
-.text-muted-purple { color: #7a5aaa; }
-.text-muted-coral  { color: #b07050; }
+/* ---- Brand colors for text (blue palette) ---- */
+.text-muted-pink   { color: #C1E8FF; }
+.text-muted-blue   { color: #7DA0CA; }
+.text-muted-green  { color: #5483B3; }
+.text-muted-yellow { color: #C1E8FF; }
+.text-muted-purple { color: #7DA0CA; }
+.text-muted-coral  { color: #5483B3; }
 
 /* ---- Tag Pill ---- */
 .tag-pill {
@@ -251,6 +319,9 @@ body {
     padding: 4px 12px;
     border-radius: 99px;
     white-space: nowrap;
+    background: rgba(193, 232, 255, 0.1) !important;
+    color: #C1E8FF !important;
+    border: 1px solid rgba(193, 232, 255, 0.12);
 }
 
 /* ========================================

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects — Math with Winny</title>
+    <meta name="description" content="Browse all projects by Winny — a passionate Mathematics Educator making numbers fun and accessible.">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            pink: '#b05a7a',
+                            blue: '#5a8ab0',
+                            green: '#4a8a60',
+                            purple: '#7a5aaa',
+                            yellow: '#a08030',
+                            coral: '#b07050',
+                        },
+                        soft: {
+                            pink: '#fdf2f5',
+                            blue: '#f0f6fb',
+                            green: '#f0f7f2',
+                            yellow: '#fdf8ee',
+                            purple: '#f5f0fa',
+                            coral: '#fdf4f0',
+                            mint: '#eef8f4',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                        math: ['Caveat', 'cursive'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="geo-pattern min-h-screen">
+
+    <!-- =============== HEADER =============== -->
+    <header class="relative pt-24 md:pt-28 pb-4 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <a href="index.html" class="inline-flex items-center gap-2 text-[#7DA0CA] hover:text-[#C1E8FF] transition-colors text-sm font-medium mb-6 group">
+            <i data-lucide="arrow-left" class="w-4 h-4 group-hover:-translate-x-1 transition-transform"></i>
+            Back to Home
+        </a>
+        <div class="text-center mb-10">
+            <h1 class="font-display text-3xl sm:text-4xl font-[900] text-[#C1E8FF]">
+                All <span class="gradient-text">Projects</span> 📐
+            </h1>
+            <p class="text-[#7DA0CA] text-sm mt-3 max-w-lg mx-auto">A collection of my teaching projects, learning materials, and educational innovations.</p>
+            <div class="flex justify-center mt-4">
+                <div class="w-12 h-[3px] rounded-full bg-gradient-to-r from-brand-green via-brand-blue to-brand-purple opacity-60"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- =============== NAV (sticky) =============== -->
+    <nav class="nav-glass fixed top-0 left-0 right-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 md:h-[72px]">
+                <a href="index.html" class="flex items-center gap-2">
+                    <span class="text-xl md:text-2xl font-display font-[800] tracking-tight">
+                        <span class="text-[#C1E8FF]">MATH</span><span class="text-[#7DA0CA]">/</span><span class="text-[#C1E8FF]">∑</span>
+                    </span>
+                    <span class="text-[11px] md:text-xs font-body text-[#7DA0CA] leading-tight">
+                        with<br><span class="font-semibold text-[#7DA0CA]">WINNY</span>
+                    </span>
+                </a>
+                <a href="index.html" class="px-4 py-2 rounded-lg text-[13px] font-medium text-[#7DA0CA] hover:text-[#C1E8FF] hover:bg-[#052659] transition-all duration-300 flex items-center gap-1">
+                    <i data-lucide="home" class="w-4 h-4"></i> Home
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- =============== PROJECTS GRID =============== -->
+    <section class="relative pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="bento-grid grid-cols-1 md:grid-cols-12 reveal">
+
+            <!-- Project 1 -->
+            <div class="bento-card p-5 md:col-span-7 group cursor-pointer">
+                <div class="project-img-wrap h-48 sm:h-56 mb-4">
+                    <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800&h=500&fit=crop" alt="Algebra Adventures" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 rounded-[1rem]">
+                        <span class="text-white font-medium text-sm flex items-center gap-1"><i data-lucide="external-link" class="w-4 h-4"></i> View Project</span>
+                    </div>
+                </div>
+                <div class="flex items-start justify-between gap-4">
+                    <div>
+                        <h3 class="font-display text-lg font-bold text-[#C1E8FF] mb-1">Algebra Adventures</h3>
+                        <p class="text-[#7DA0CA] text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                    </div>
+                    <span class="tag-pill bg-[#052659] text-[#C1E8FF]">Algebra</span>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bento-card p-5 md:col-span-5 group cursor-pointer">
+                <div class="project-img-wrap h-48 sm:h-56 mb-4">
+                    <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?w=600&h=500&fit=crop" alt="Calculus Chronicles" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 rounded-[1rem]">
+                        <span class="text-white font-medium text-sm flex items-center gap-1"><i data-lucide="external-link" class="w-4 h-4"></i> View Project</span>
+                    </div>
+                </div>
+                <div class="flex items-start justify-between gap-4">
+                    <div>
+                        <h3 class="font-display text-lg font-bold text-[#C1E8FF] mb-1">Calculus Chronicles</h3>
+                        <p class="text-[#7DA0CA] text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    </div>
+                    <span class="tag-pill bg-[#052659] text-[#C1E8FF]">Calculus</span>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="bento-card p-5 md:col-span-5 group cursor-pointer">
+                <div class="project-img-wrap h-48 sm:h-56 mb-4">
+                    <img src="https://images.unsplash.com/photo-1596495578065-6e0763fa1178?w=600&h=500&fit=crop" alt="Geometry Explorers" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 rounded-[1rem]">
+                        <span class="text-white font-medium text-sm flex items-center gap-1"><i data-lucide="external-link" class="w-4 h-4"></i> View Project</span>
+                    </div>
+                </div>
+                <div class="flex items-start justify-between gap-4">
+                    <div>
+                        <h3 class="font-display text-lg font-bold text-[#C1E8FF] mb-1">Geometry Explorers</h3>
+                        <p class="text-[#7DA0CA] text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    </div>
+                    <span class="tag-pill bg-[#052659] text-[#C1E8FF]">Geometry</span>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="bento-card p-5 md:col-span-7 group cursor-pointer">
+                <div class="project-img-wrap h-48 sm:h-56 mb-4">
+                    <img src="https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?w=800&h=500&fit=crop" alt="Statistics Workshop" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 rounded-[1rem]">
+                        <span class="text-white font-medium text-sm flex items-center gap-1"><i data-lucide="external-link" class="w-4 h-4"></i> View Project</span>
+                    </div>
+                </div>
+                <div class="flex items-start justify-between gap-4">
+                    <div>
+                        <h3 class="font-display text-lg font-bold text-[#C1E8FF] mb-1">Statistics Workshop</h3>
+                        <p class="text-[#7DA0CA] text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                    </div>
+                    <span class="tag-pill bg-[#052659] text-[#C1E8FF]">Statistics</span>
+                </div>
+            </div>
+
+            <!-- Project 5 (new) -->
+            <div class="bento-card p-5 md:col-span-6 group cursor-pointer">
+                <div class="project-img-wrap h-48 sm:h-56 mb-4">
+                    <img src="https://images.unsplash.com/photo-1509228627152-72ae9ae6848d?w=700&h=500&fit=crop" alt="Trigonometry Mastery" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 rounded-[1rem]">
+                        <span class="text-white font-medium text-sm flex items-center gap-1"><i data-lucide="external-link" class="w-4 h-4"></i> View Project</span>
+                    </div>
+                </div>
+                <div class="flex items-start justify-between gap-4">
+                    <div>
+                        <h3 class="font-display text-lg font-bold text-[#C1E8FF] mb-1">Trigonometry Mastery</h3>
+                        <p class="text-[#7DA0CA] text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                    <span class="tag-pill bg-[#052659] text-[#C1E8FF]">Trigonometry</span>
+                </div>
+            </div>
+
+            <!-- Project 6 (new) -->
+            <div class="bento-card p-5 md:col-span-6 group cursor-pointer">
+                <div class="project-img-wrap h-48 sm:h-56 mb-4">
+                    <img src="https://images.unsplash.com/photo-1580894894513-541e068a3e2b?w=700&h=500&fit=crop" alt="Number Theory Fun" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 rounded-[1rem]">
+                        <span class="text-white font-medium text-sm flex items-center gap-1"><i data-lucide="external-link" class="w-4 h-4"></i> View Project</span>
+                    </div>
+                </div>
+                <div class="flex items-start justify-between gap-4">
+                    <div>
+                        <h3 class="font-display text-lg font-bold text-[#C1E8FF] mb-1">Number Theory Fun</h3>
+                        <p class="text-[#7DA0CA] text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                    <span class="tag-pill bg-[#052659] text-[#C1E8FF]">Number Theory</span>
+                </div>
+            </div>
+
+            <!-- Project 7 (new) -->
+            <div class="bento-card p-5 md:col-span-7 group cursor-pointer">
+                <div class="project-img-wrap h-48 sm:h-56 mb-4">
+                    <img src="https://images.unsplash.com/photo-1453733190371-0a9bedd82893?w=800&h=500&fit=crop" alt="Probability Games" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 rounded-[1rem]">
+                        <span class="text-white font-medium text-sm flex items-center gap-1"><i data-lucide="external-link" class="w-4 h-4"></i> View Project</span>
+                    </div>
+                </div>
+                <div class="flex items-start justify-between gap-4">
+                    <div>
+                        <h3 class="font-display text-lg font-bold text-[#C1E8FF] mb-1">Probability Games</h3>
+                        <p class="text-[#7DA0CA] text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    </div>
+                    <span class="tag-pill bg-[#052659] text-[#C1E8FF]">Probability</span>
+                </div>
+            </div>
+
+            <!-- Project 8 (new) -->
+            <div class="bento-card p-5 md:col-span-5 group cursor-pointer">
+                <div class="project-img-wrap h-48 sm:h-56 mb-4">
+                    <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=600&h=500&fit=crop" alt="Math Olympiad Prep" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 rounded-[1rem]">
+                        <span class="text-white font-medium text-sm flex items-center gap-1"><i data-lucide="external-link" class="w-4 h-4"></i> View Project</span>
+                    </div>
+                </div>
+                <div class="flex items-start justify-between gap-4">
+                    <div>
+                        <h3 class="font-display text-lg font-bold text-[#C1E8FF] mb-1">Math Olympiad Prep</h3>
+                        <p class="text-[#7DA0CA] text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    </div>
+                    <span class="tag-pill bg-[#052659] text-[#C1E8FF]">Olympiad</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =============== FOOTER =============== -->
+    <footer class="bg-[#021024] border-t border-[#052659] py-6 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
+            <div class="flex items-center gap-2">
+                <span class="font-display font-[800] text-base">
+                    <span class="text-[#C1E8FF]">MATH</span><span class="text-[#7DA0CA]">/</span><span class="text-[#C1E8FF]">∑</span>
+                </span>
+                <span class="text-[#7DA0CA] text-xs">with Winny</span>
+            </div>
+            <p class="text-[#7DA0CA] text-xs text-center">© 2026 Winny. Made with 💖 and a little bit of π.</p>
+            <div class="flex items-center gap-1 text-[#7DA0CA] text-xs">
+                <i data-lucide="heart" class="w-3 h-3 text-[#C1E8FF]"></i>
+                <span>Designed for math lovers</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+
+            // Scroll reveal
+            const revealElements = document.querySelectorAll('.reveal');
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        const cards = entry.target.querySelectorAll('.bento-card');
+                        cards.forEach((card, i) => {
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(30px)';
+                            card.style.transition = `all 0.6s cubic-bezier(0.16, 1, 0.3, 1) ${i * 0.08}s`;
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            }, 50);
+                        });
+                    }
+                });
+            }, { threshold: 0.05, rootMargin: '0px 0px -30px 0px' });
+            revealElements.forEach(el => revealObserver.observe(el));
+        });
+    </script>
+</body>
+</html>
