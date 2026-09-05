@@ -57,15 +57,15 @@
 
     <!-- =============== HEADER =============== -->
     <header class="relative pt-24 md:pt-28 pb-4 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <a href="index.html" class="inline-flex items-center gap-2 text-[#7DA0CA] hover:text-[#C1E8FF] transition-colors text-sm font-medium mb-6 group">
+        <a href="index.html" class="inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors text-sm font-medium mb-6 group">
             <i data-lucide="arrow-left" class="w-4 h-4 group-hover:-translate-x-1 transition-transform"></i>
             Back to Home
         </a>
         <div class="text-center mb-10">
-            <h1 class="font-display text-3xl sm:text-4xl font-[900] text-[#C1E8FF]">
+            <h1 class="font-display text-3xl sm:text-4xl font-[900] text-white">
                 All <span class="gradient-text">Projects</span> 📐
             </h1>
-            <p class="text-[#7DA0CA] text-sm mt-3 max-w-lg mx-auto">A collection of my teaching projects, learning materials, and educational innovations.</p>
+            <p class="text-white/70 text-sm mt-3 max-w-lg mx-auto">A collection of my teaching projects, learning materials, and educational innovations.</p>
             <div class="flex justify-center mt-4">
                 <div class="w-12 h-[3px] rounded-full bg-gradient-to-r from-brand-green via-brand-blue to-brand-purple opacity-60"></div>
             </div>
@@ -77,14 +77,11 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16 md:h-[72px]">
                 <a href="index.html" class="flex items-center gap-2">
-                    <span class="text-xl md:text-2xl font-display font-[800] tracking-tight">
-                        <span class="text-[#C1E8FF]">MATH</span><span class="text-[#7DA0CA]">/</span><span class="text-[#C1E8FF]">∑</span>
-                    </span>
-                    <span class="text-[11px] md:text-xs font-body text-[#7DA0CA] leading-tight">
-                        with<br><span class="font-semibold text-[#7DA0CA]">WINNY</span>
+                    <span class="text-xl md:text-2xl font-display font-[800] tracking-tight text-[#C1E8FF]">
+                        WINNY
                     </span>
                 </a>
-                <a href="index.html" class="px-4 py-2 rounded-lg text-[13px] font-medium text-[#7DA0CA] hover:text-[#C1E8FF] hover:bg-[#052659] transition-all duration-300 flex items-center gap-1">
+                <a href="index.html" class="px-4 py-2 rounded-lg text-[13px] font-medium text-white/80 hover:text-white hover:bg-[#052659] transition-all duration-300 flex items-center gap-1">
                     <i data-lucide="home" class="w-4 h-4"></i> Home
                 </a>
             </div>
@@ -96,139 +93,118 @@
     <section class="relative pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div class="bento-grid grid-cols-1 md:grid-cols-12 reveal">
 
-            <!-- Project 1 -->
-            <div class="bento-card p-5 md:col-span-7 group cursor-pointer">
+            <!-- Project 1: Sinta 3 Research Project -->
+            <div class="bento-card p-5 md:col-span-7 group cursor-pointer" onclick="openProjectModal({
+                title: 'Sinta 3 Research Project',
+                description: 'The research results show that the mathematics textbook integrating Problem-Based Learning (PBL), Ranggawarsita Museum ethnomathematics, and spreadsheet-assisted learning to enhance students\u0027 statistical thinking skills. The research evaluated the textbook through feasibility, readability, student response, and effectiveness tests. The product achieved a 90.56% feasibility score, 86.58% readability score, and 95.91% positive student response.\n\nThe effectiveness test showed that students who used the textbook demonstrated significantly better statistical thinking skills than students receiving expository instruction (t = 5.31). More than 75% of students achieved mastery of the material (z = 1.969), while the textbook achieved an N-Gain score of 0.65, categorized as moderate (t = 4.178).\n\nPublished in<br>JP2M – Journal of Mathematics Education and Learning<br>E-ISSN: 2580-3263 | Volume 13, Issue 1 | March 2027',
+                images: ['aset/Projek/projek 1/buku 1.jpg','aset/Projek/projek 1/projek 1a.jpg','aset/Projek/projek 1/projek 1b.png','aset/Projek/projek 1/projek 1c.jpeg','aset/Projek/projek 1/projek 1d.jpeg'],
+                technologies: ['Microsoft Office','IBM SPSS Statistics 25','Canva'],
+                links: [{label:'View Textbook', url:'https://heyzine.com/flip-book/cf0bc8d21c.html'}]
+            })">
                 <div class="project-img-wrap h-48 sm:h-56 mb-4">
-                    <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800&h=500&fit=crop" alt="Algebra Adventures" class="w-full h-full object-cover">
+                    <img src="aset/Projek/projek 1/buku 1.jpg" alt="Sinta 3 Research Project" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 rounded-[1rem]">
                         <span class="text-white font-medium text-sm flex items-center gap-1"><i data-lucide="external-link" class="w-4 h-4"></i> View Project</span>
                     </div>
                 </div>
                 <div class="flex items-start justify-between gap-4">
                     <div>
-                        <h3 class="font-display text-lg font-bold text-[#C1E8FF] mb-1">Algebra Adventures</h3>
-                        <p class="text-[#7DA0CA] text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        <h3 class="font-display text-lg font-bold text-white mb-1">Sinta 3 Research Project</h3>
+                        <p class="text-white/70 text-sm leading-relaxed">Mathematics textbook integrating PBL, Ranggawarsita Museum ethnomathematics, and spreadsheet-assisted learning for statistical thinking skills.</p>
                     </div>
-                    <span class="tag-pill bg-[#052659] text-[#C1E8FF]">Algebra</span>
+                    <span class="tag-pill">Research</span>
                 </div>
             </div>
 
-            <!-- Project 2 -->
-            <div class="bento-card p-5 md:col-span-5 group cursor-pointer">
+            <!-- Project 2: PKM-RSH -->
+            <div class="bento-card p-5 md:col-span-5 group cursor-pointer" onclick="openProjectModal({
+                title: 'PKM-RSH Funded Project',
+                description: 'Developed Mathchallenge, a mathematics textbook based on Challenge-Based Learning (CBL), enhanced with Virtual Reality (VR), and infused with cultural heritage buildings to improve students\u0027 mathematical problem-solving skills.\n\nThe Mathchallenge program achieved a 76% effectiveness rate during the observation period, demonstrating its potential to support students\u0027 learning and problem-solving skills. The product also achieved an 86.97% feasibility score, categorized as highly feasible, an 89.58% readability score, categorized as easy to understand, and a 95% student response rate, categorized as very good.',
+                images: ['aset/Projek/projek 2/projek 2a.jpeg','aset/Projek/projek 2/projek 2b.jpg','aset/Projek/projek 2/projek 2c.png','aset/Projek/projek 2/projek 2d.png'],
+                technologies: ['Microsoft Office','Microsoft Excel','IBM SPSS Statistics 25','Canva','Unity'],
+                links: [{label:'View Mathchallenge', url:'https://drive.google.com/drive/folders/1hfIiYKscNSxrxTp2geyoYT4YKn7sf6s1?usp=drive_link'},{label:'View VR Project', url:'https://drive.google.com/drive/folders/1PAYT7XIJ-kQDrk07VbpU-zxrqVe3DbHy?usp=drive_link'}]
+            })">
                 <div class="project-img-wrap h-48 sm:h-56 mb-4">
-                    <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?w=600&h=500&fit=crop" alt="Calculus Chronicles" class="w-full h-full object-cover">
+                    <img src="aset/Projek/projek 2/projek 2a.jpeg" alt="PKM-RSH Funded Project" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 rounded-[1rem]">
                         <span class="text-white font-medium text-sm flex items-center gap-1"><i data-lucide="external-link" class="w-4 h-4"></i> View Project</span>
                     </div>
                 </div>
                 <div class="flex items-start justify-between gap-4">
                     <div>
-                        <h3 class="font-display text-lg font-bold text-[#C1E8FF] mb-1">Calculus Chronicles</h3>
-                        <p class="text-[#7DA0CA] text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                        <h3 class="font-display text-lg font-bold text-white mb-1">PKM-RSH Funded Project</h3>
+                        <p class="text-white/70 text-sm leading-relaxed">Mathchallenge — CBL-based mathematics textbook enhanced with Virtual Reality and cultural heritage buildings.</p>
                     </div>
-                    <span class="tag-pill bg-[#052659] text-[#C1E8FF]">Calculus</span>
+                    <span class="tag-pill">PKM</span>
                 </div>
             </div>
 
-            <!-- Project 3 -->
-            <div class="bento-card p-5 md:col-span-5 group cursor-pointer">
+            <!-- Project 3: Literature Review -->
+            <div class="bento-card p-5 md:col-span-5 group cursor-pointer" onclick="openProjectModal({
+                title: 'Literature Review Project',
+                description: '\u0022Literature Review: The Use of Nearpod as a STEM-Based Learning Tool to Improve Students\u0027 Numeracy Skills\u0022\n\nSuccessfully conducted a systematic literature review in the field of mathematics education by searching for, selecting, and analyzing relevant research to identify research trends, key findings, and opportunities for future research.\n\nPublished in<br>PRISMA - Proceedings of the 17th National Mathematics Seminar',
+                images: ['aset/Projek/projek 3/projek 3a.png'],
+                technologies: ['Microsoft Office','Google Scholar','Reference Management Tools'],
+                links: [{label:'View Journal', url:'https://proceeding.unnes.ac.id/prisma/article/view/2998'}]
+            })">
                 <div class="project-img-wrap h-48 sm:h-56 mb-4">
-                    <img src="https://images.unsplash.com/photo-1596495578065-6e0763fa1178?w=600&h=500&fit=crop" alt="Geometry Explorers" class="w-full h-full object-cover">
+                    <img src="aset/Projek/projek 3/projek 3a.png" alt="Literature Review Project" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 rounded-[1rem]">
                         <span class="text-white font-medium text-sm flex items-center gap-1"><i data-lucide="external-link" class="w-4 h-4"></i> View Project</span>
                     </div>
                 </div>
                 <div class="flex items-start justify-between gap-4">
                     <div>
-                        <h3 class="font-display text-lg font-bold text-[#C1E8FF] mb-1">Geometry Explorers</h3>
-                        <p class="text-[#7DA0CA] text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                        <h3 class="font-display text-lg font-bold text-white mb-1">Literature Review</h3>
+                        <p class="text-white/70 text-sm leading-relaxed">Systematic literature review on the use of Nearpod as a STEM-based learning tool.</p>
                     </div>
-                    <span class="tag-pill bg-[#052659] text-[#C1E8FF]">Geometry</span>
+                    <span class="tag-pill">Review</span>
                 </div>
             </div>
 
-            <!-- Project 4 -->
-            <div class="bento-card p-5 md:col-span-7 group cursor-pointer">
+            <!-- Project 4: Mathematics Textbook -->
+            <div class="bento-card p-5 md:col-span-7 group cursor-pointer" onclick="openProjectModal({
+                title: 'Mathematics Textbook',
+                description: 'Developed a challenge-based mathematics textbook based on the Ranggawarsita Museum, using Tinkercad to improve 7th-grade students\u0027 problem-solving skills in the topic of three-dimensional shapes.',
+                images: ['aset/Projek/projek 4/projek 4.png','aset/Projek/projek 4/projek 4a.png','aset/Projek/projek 4/projek 4b.png'],
+                technologies: ['Microsoft Office','Canva','Tinkercad'],
+                links: [{label:'View Textbook', url:'https://heyzine.com/flip-book/d43c4cc6ca.html'}]
+            })">
                 <div class="project-img-wrap h-48 sm:h-56 mb-4">
-                    <img src="https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?w=800&h=500&fit=crop" alt="Statistics Workshop" class="w-full h-full object-cover">
+                    <img src="aset/Projek/projek 4/projek 4.png" alt="Mathematics Textbook" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 rounded-[1rem]">
                         <span class="text-white font-medium text-sm flex items-center gap-1"><i data-lucide="external-link" class="w-4 h-4"></i> View Project</span>
                     </div>
                 </div>
                 <div class="flex items-start justify-between gap-4">
                     <div>
-                        <h3 class="font-display text-lg font-bold text-[#C1E8FF] mb-1">Statistics Workshop</h3>
-                        <p class="text-[#7DA0CA] text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        <h3 class="font-display text-lg font-bold text-white mb-1">Mathematics Textbook</h3>
+                        <p class="text-white/70 text-sm leading-relaxed">Challenge-based textbook using Ranggawarsita Museum and Tinkercad for 3D shapes problem-solving.</p>
                     </div>
-                    <span class="tag-pill bg-[#052659] text-[#C1E8FF]">Statistics</span>
+                    <span class="tag-pill">Textbook</span>
                 </div>
             </div>
 
-            <!-- Project 5 (new) -->
-            <div class="bento-card p-5 md:col-span-6 group cursor-pointer">
-                <div class="project-img-wrap h-48 sm:h-56 mb-4">
-                    <img src="https://images.unsplash.com/photo-1509228627152-72ae9ae6848d?w=700&h=500&fit=crop" alt="Trigonometry Mastery" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 rounded-[1rem]">
+            <!-- Project 5: Inclusive Mathematics Education Project -->
+            <div class="bento-card p-5 md:col-span-12 group cursor-pointer" onclick="openProjectModal({
+                title: 'Inclusive Mathematics Education Project',
+                description: 'Developed “Pin Point Translation,” a Braille-based mathematics learning tool designed to improve accessibility to geometry education for students with visual impairments at SLBN Kendal. The tool was designed to help students understand the concept of translation through a concrete, interactive, and kinesthetic learning approach, enabling them to explore mathematical concepts through tactile interaction.',
+                images: ['aset/Projek/projek 5/projek 5a.jpg','aset/Projek/projek 5/projek 5b.jpeg','aset/Projek/projek 5/projek 5c.jpeg'],
+                techLabel: 'Materials Used',
+                technologies: ['Braille','Translation teaching aids','Interactive learning media']
+            })">
+                <div class="project-img-wrap h-48 sm:h-64 mb-4">
+                    <img src="aset/Projek/projek 5/projek 5a.jpg" alt="Inclusive Mathematics Education Project" class="w-full h-full object-cover" style="object-position: center 30%;">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 rounded-[1rem]">
                         <span class="text-white font-medium text-sm flex items-center gap-1"><i data-lucide="external-link" class="w-4 h-4"></i> View Project</span>
                     </div>
                 </div>
                 <div class="flex items-start justify-between gap-4">
                     <div>
-                        <h3 class="font-display text-lg font-bold text-[#C1E8FF] mb-1">Trigonometry Mastery</h3>
-                        <p class="text-[#7DA0CA] text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <h3 class="font-display text-lg font-bold text-white mb-1">Inclusive Mathematics Education Project</h3>
+                        <p class="text-white/70 text-sm leading-relaxed max-w-3xl">Developed “Pin Point Translation,” a Braille-based mathematics learning tool designed to improve accessibility to geometry education for students with visual impairments.</p>
                     </div>
-                    <span class="tag-pill bg-[#052659] text-[#C1E8FF]">Trigonometry</span>
-                </div>
-            </div>
-
-            <!-- Project 6 (new) -->
-            <div class="bento-card p-5 md:col-span-6 group cursor-pointer">
-                <div class="project-img-wrap h-48 sm:h-56 mb-4">
-                    <img src="https://images.unsplash.com/photo-1580894894513-541e068a3e2b?w=700&h=500&fit=crop" alt="Number Theory Fun" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 rounded-[1rem]">
-                        <span class="text-white font-medium text-sm flex items-center gap-1"><i data-lucide="external-link" class="w-4 h-4"></i> View Project</span>
-                    </div>
-                </div>
-                <div class="flex items-start justify-between gap-4">
-                    <div>
-                        <h3 class="font-display text-lg font-bold text-[#C1E8FF] mb-1">Number Theory Fun</h3>
-                        <p class="text-[#7DA0CA] text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                    </div>
-                    <span class="tag-pill bg-[#052659] text-[#C1E8FF]">Number Theory</span>
-                </div>
-            </div>
-
-            <!-- Project 7 (new) -->
-            <div class="bento-card p-5 md:col-span-7 group cursor-pointer">
-                <div class="project-img-wrap h-48 sm:h-56 mb-4">
-                    <img src="https://images.unsplash.com/photo-1453733190371-0a9bedd82893?w=800&h=500&fit=crop" alt="Probability Games" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 rounded-[1rem]">
-                        <span class="text-white font-medium text-sm flex items-center gap-1"><i data-lucide="external-link" class="w-4 h-4"></i> View Project</span>
-                    </div>
-                </div>
-                <div class="flex items-start justify-between gap-4">
-                    <div>
-                        <h3 class="font-display text-lg font-bold text-[#C1E8FF] mb-1">Probability Games</h3>
-                        <p class="text-[#7DA0CA] text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                    </div>
-                    <span class="tag-pill bg-[#052659] text-[#C1E8FF]">Probability</span>
-                </div>
-            </div>
-
-            <!-- Project 8 (new) -->
-            <div class="bento-card p-5 md:col-span-5 group cursor-pointer">
-                <div class="project-img-wrap h-48 sm:h-56 mb-4">
-                    <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=600&h=500&fit=crop" alt="Math Olympiad Prep" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 rounded-[1rem]">
-                        <span class="text-white font-medium text-sm flex items-center gap-1"><i data-lucide="external-link" class="w-4 h-4"></i> View Project</span>
-                    </div>
-                </div>
-                <div class="flex items-start justify-between gap-4">
-                    <div>
-                        <h3 class="font-display text-lg font-bold text-[#C1E8FF] mb-1">Math Olympiad Prep</h3>
-                        <p class="text-[#7DA0CA] text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                    </div>
-                    <span class="tag-pill bg-[#052659] text-[#C1E8FF]">Olympiad</span>
+                    <span class="tag-pill">Inclusive Ed</span>
                 </div>
             </div>
 
@@ -240,45 +216,19 @@
     <footer class="bg-[#021024] border-t border-[#052659] py-6 px-4">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
             <div class="flex items-center gap-2">
-                <span class="font-display font-[800] text-base">
-                    <span class="text-[#C1E8FF]">MATH</span><span class="text-[#7DA0CA]">/</span><span class="text-[#C1E8FF]">∑</span>
+                <span class="font-display font-[800] text-base text-[#C1E8FF]">
+                    WINNY
                 </span>
-                <span class="text-[#7DA0CA] text-xs">with Winny</span>
             </div>
-            <p class="text-[#7DA0CA] text-xs text-center">© 2026 Winny. Made with 💖 and a little bit of π.</p>
-            <div class="flex items-center gap-1 text-[#7DA0CA] text-xs">
+            <p class="text-white/60 text-xs text-center">© 2026 Winny. Made with 💖</p>
+            <div class="flex items-center gap-1 text-white/60 text-xs">
                 <i data-lucide="heart" class="w-3 h-3 text-[#C1E8FF]"></i>
-                <span>Designed for math lovers</span>
+                <span>Designed for education</span>
             </div>
         </div>
     </footer>
 
     <!-- Script -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            lucide.createIcons();
-
-            // Scroll reveal
-            const revealElements = document.querySelectorAll('.reveal');
-            const revealObserver = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('active');
-                        const cards = entry.target.querySelectorAll('.bento-card');
-                        cards.forEach((card, i) => {
-                            card.style.opacity = '0';
-                            card.style.transform = 'translateY(30px)';
-                            card.style.transition = `all 0.6s cubic-bezier(0.16, 1, 0.3, 1) ${i * 0.08}s`;
-                            setTimeout(() => {
-                                card.style.opacity = '1';
-                                card.style.transform = 'translateY(0)';
-                            }, 50);
-                        });
-                    }
-                });
-            }, { threshold: 0.05, rootMargin: '0px 0px -30px 0px' });
-            revealElements.forEach(el => revealObserver.observe(el));
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
