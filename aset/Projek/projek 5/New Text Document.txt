@@ -1,0 +1,8 @@
+Inclusive Mathematics Education Project
+
+Developed “Pin Point Translation,” a Braille-based mathematics learning tool designed to improve accessibility to geometry education for students with visual impairments at SLBN Kendal. The tool was designed to help students understand the concept of translation through a concrete, interactive, and kinesthetic learning approach, enabling them to explore mathematical concepts through tactile interaction.
+
+Materials Used
+Braille
+Translation teaching aids
+Interactive learning media

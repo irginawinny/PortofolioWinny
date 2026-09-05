@@ -1,0 +1,18 @@
+PKM-RSH Funded Project
+
+Developed Mathchallenge, a mathematics textbook based on Challenge-Based Learning (CBL), enhanced with Virtual Reality (VR), and infused with cultural heritage buildings to improve students’ mathematical problem-solving skills. 
+
+The Mathchallenge program achieved a 76% effectiveness rate during the observation period, demonstrating its potential to support students’ learning and problem-solving skills. The product also achieved an 86.97% feasibility score, categorized as highly feasible, an 89.58% readability score, categorized as easy to understand, and a 95% student response rate, categorized as very good.
+
+Mathchallenge: VR-Based Mathematics Learning
+https://drive.google.com/drive/folders/1hfIiYKscNSxrxTp2geyoYT4YKn7sf6s1?usp=drive_link
+
+Virtual Reality (VR)
+https://drive.google.com/drive/folders/1PAYT7XIJ-kQDrk07VbpU-zxrqVe3DbHy?usp=drive_link
+
+Technologies Used
+Microsoft Office
+Microsoft Excel
+IBM SPSS Statistics 25
+Canva
+Unity

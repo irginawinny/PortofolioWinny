@@ -1,0 +1,11 @@
+Mathematics Textbook
+
+Developed a challenge-based mathematics textbook based on the Ranggawarsita Museum, using Tinkercad to improve 7th-grade students’ problem-solving skills in the topic of three-dimensional shapes.
+
+Mathematics Textbook
+https://heyzine.com/flip-book/d43c4cc6ca.html
+
+Technologies Used
+Microsoft Office
+Canva
+Tinkercard

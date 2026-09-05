@@ -1,0 +1,17 @@
+Sinta 3 Research Project
+
+The research results show that the mathematics textbook integrating Problem-Based Learning (PBL), Ranggawarsita Museum ethnomathematics, and spreadsheet-assisted learning to enhance students’ statistical thinking skills. The research evaluated the textbook through feasibility, readability, student response, and effectiveness tests. The product achieved a 90.56% feasibility score, 86.58% readability score, and 95.91% positive student response.
+
+The effectiveness test showed that students who used the textbook demonstrated significantly better statistical thinking skills than students receiving expository instruction (t = 5.31). More than 75% of students achieved mastery of the material (z = 1.969), while the textbook achieved an N-Gain score of 0.65, categorized as moderate (t = 4.178).
+
+Published in
+JP2M – Journal of Mathematics Education and Learning
+E-ISSN: 2580-3263 | Volume 13, Issue 1 | March 2027
+
+Mathematics Textbook
+https://heyzine.com/flip-book/cf0bc8d21c.html
+
+Technologies Used
+Microsoft Office
+IBM SPSS Statistics 25
+Canva
